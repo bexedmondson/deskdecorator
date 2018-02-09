@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -109,6 +110,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &19769089
 GameObject:
@@ -332,11 +335,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!4 &62627249
 Transform:
   m_ObjectHideFlags: 0
@@ -614,8 +617,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   decorationList:
   - {fileID: 11400000, guid: 45498c5c610f3449d8a145f96608bd65, type: 2}
-  - {fileID: 11400000, guid: 39d1c30a1d80b4acda8d10482986080b, type: 2}
-  - {fileID: 11400000, guid: 9c575c3e9df474b95a4f486fd23bdead, type: 2}
+  - {fileID: 11400000, guid: 2ff3a1b71377c4f50ae177ea2f1f162f, type: 2}
+  - {fileID: 11400000, guid: e4223e2228ed341c895da5a061d66a1f, type: 2}
 --- !u!1 &419503560
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +738,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -750,6 +754,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
